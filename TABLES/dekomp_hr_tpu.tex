@@ -1,0 +1,33 @@
+\begin{table}[htbp]
+\centering
+\caption{Dekomposition af USD-hedge ratioens respons på et TPU-stød}
+\label{tab:dekomp}
+\begin{threeparttable}
+\begin{tabular}{lcccccc}
+\toprule
+$h$ & 0 & 1 & 2 & 3 & 4 & 6 \\
+\midrule
+\multicolumn{7}{l}{\textit{Panel A: Efter april 2025 ($\beta_h+\phi_h$)}} \\
+Hedge ratio (pp) & $2.08$ & $2.95^{*}$ & $2.78$ & $2.80$ & $4.59^{**}$ & $6.00^{**}$ \\
+ & (1.77) & (1.79) & (2.62) & (2.05) & (2.11) & (2.49) \\
+Afdækket beløb (pct.) & $1.07$ & $3.07$ & $3.28$ & $5.37$ & $8.16^{*}$ & $12.99^{***}$ \\
+ & (1.53) & (2.29) & (2.64) & (3.33) & (4.31) & (2.31) \\
+Eksponering (pct.) & $-2.01$ & $-1.42$ & $-1.06$ & $0.53$ & $1.06$ & $3.59$ \\
+ & (2.41) & (2.18) & (3.25) & (3.82) & (6.18) & (5.08) \\
+\addlinespace
+\multicolumn{7}{l}{\textit{Panel B: Forskel ($\phi_h$)}} \\
+Hedge ratio (pp) & $1.85$ & $2.52$ & $3.05$ & $3.23$ & $4.69^{**}$ & $4.82^{**}$ \\
+ & (1.58) & (1.66) & (2.41) & (2.02) & (2.07) & (2.45) \\
+Afdækket beløb (pct.) & $1.46$ & $2.45$ & $3.35$ & $5.74^{*}$ & $8.40^{**}$ & $10.76^{***}$ \\
+ & (1.33) & (2.05) & (2.36) & (3.29) & (4.15) & (2.29) \\
+Eksponering (pct.) & $-1.31$ & $-1.32$ & $-1.31$ & $0.34$ & $1.27$ & $3.18$ \\
+ & (2.22) & (2.20) & (3.31) & (3.92) & (6.03) & (5.09) \\
+\midrule
+$n_{\text{post}}$ & 16 & 15 & 14 & 13 & 12 & 10 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item \textit{Note:} Koefficienter fra ligning \eqref{eq:lp_dummy} med henholdsvis USD-hedge ratioen (procentpoint), log til det afdækkede beløb og log til USD-eksponeringen ($\times 100$) som afhængig variabel. Da $\ln(\text{hedge ratio}) = \ln(\text{afdækket}) - \ln(\text{eksponering})$, svarer forskellen mellem anden og tredje række tilnærmelsesvis til den relative ændring i hedge ratioen. HC3-standardfejl i parentes. $^{*}$, $^{**}$ og $^{***}$ angiver signifikans på 10, 5 og 1 pct.-niveau.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

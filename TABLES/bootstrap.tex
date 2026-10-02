@@ -1,0 +1,52 @@
+\begin{table}[htbp]
+\centering
+\caption{Bootstrap-baseret inferens}
+\label{tab:bootstrap}
+\begin{threeparttable}
+\begin{tabular}{c cccc}
+\toprule
+$h$ & Koefficient & $p$ (HC3) & $p$ (bootstrap) & 95 pct. bootstrap-KI \\
+\midrule
+\multicolumn{5}{l}{\textit{Panel A: TPU (før 2025)}} \\
+0 & $-0.44$ & $0.427$ & $0.332$ & $[-1.32;\ 0.43]$ \\
+1 & $0.62$ & $0.379$ & $0.332$ & $[-0.71;\ 1.90]$ \\
+2 & $1.29$ & $0.113$ & $0.103$ & $[-0.05;\ 2.96]$ \\
+3 & $1.97$ & $0.017$ & $0.033$ & $[0.44;\ 3.90]$ \\
+4 & $1.39$ & $0.190$ & $0.189$ & $[-0.62;\ 3.78]$ \\
+6 & $0.84$ & $0.501$ & $0.471$ & $[-1.36;\ 3.64]$ \\
+12 & $0.56$ & $0.767$ & $0.775$ & $[-2.82;\ 5.32]$ \\
+18 & $-0.35$ & $0.888$ & $0.893$ & $[-4.90;\ 6.23]$ \\
+24 & $0.08$ & $0.976$ & $0.981$ & $[-4.98;\ 7.89]$ \\
+\addlinespace
+\multicolumn{5}{l}{\textit{Panel B: GPR}} \\
+0 & $0.08$ & $0.770$ & $0.735$ & $[-0.37;\ 0.46]$ \\
+1 & $-0.01$ & $0.979$ & $0.973$ & $[-0.65;\ 0.57]$ \\
+2 & $0.13$ & $0.750$ & $0.710$ & $[-0.66;\ 0.83]$ \\
+3 & $0.22$ & $0.671$ & $0.642$ & $[-0.76;\ 1.18]$ \\
+4 & $0.06$ & $0.918$ & $0.911$ & $[-1.00;\ 1.11]$ \\
+6 & $0.01$ & $0.988$ & $0.985$ & $[-1.69;\ 1.93]$ \\
+12 & $-0.91$ & $0.363$ & $0.379$ & $[-2.86;\ 1.16]$ \\
+18 & $-1.45$ & $0.215$ & $0.259$ & $[-4.16;\ 0.83]$ \\
+24 & $-1.97$ & $0.091$ & $0.121$ & $[-4.76;\ 0.44]$ \\
+\addlinespace
+\multicolumn{5}{l}{\textit{Panel C: $\text{GPR}_{\text{USA}}$}} \\
+0 & $0.03$ & $0.917$ & $0.899$ & $[-0.38;\ 0.41]$ \\
+1 & $-0.04$ & $0.907$ & $0.880$ & $[-0.67;\ 0.52]$ \\
+2 & $0.15$ & $0.703$ & $0.682$ & $[-0.62;\ 0.81]$ \\
+3 & $0.25$ & $0.607$ & $0.581$ & $[-0.66;\ 1.14]$ \\
+4 & $-0.00$ & $0.997$ & $0.999$ & $[-1.03;\ 1.05]$ \\
+6 & $-0.10$ & $0.902$ & $0.914$ & $[-1.69;\ 1.62]$ \\
+12 & $-1.01$ & $0.317$ & $0.335$ & $[-2.93;\ 1.15]$ \\
+18 & $-1.65$ & $0.126$ & $0.167$ & $[-4.14;\ 0.60]$ \\
+24 & $-2.13$ & $0.042$ & $0.071$ & $[-4.55;\ 0.10]$ \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Note:} Responsen i pct. (+ = dollaren styrkes over for euroen) på et stød på
+én standardafvigelse, estimeret med ligning \eqref{eq:lp_final}. Bootstrap-p-værdier og
+percentile-t-konfidensintervaller er baseret på 999 wild bootstrap-replikationer fra den
+tilsvarende VAR(1), jf. Montiel Olea og Plagborg-Møller (2021, afsnit 5). TPU er estimeret
+på stikprøven til og med december 2024.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

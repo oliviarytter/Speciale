@@ -1,0 +1,27 @@
+\begin{table}[htbp]
+\centering
+\caption{Robusthed: dollarens respons på et TPU-stød før 2025}
+\label{tab:rob_tpu_foer}
+\begin{threeparttable}
+\begin{tabular}{lcccccccc}
+\toprule
+ & \multicolumn{8}{c}{Horisont $h$} \\
+\cmidrule(lr){2-9}
+Specifikation & 0 & 1 & 2 & 3 & 4 & 6 & 12 & 24 \\
+\midrule
+Baseline & $-0.44$ & $0.62$ & $1.29$ & $1.97^{**}$ & $1.39$ & $0.84$ & $0.56$ & $0.08$ \\
+Newey-West-standardfejl & $-0.44$ & $0.62$ & $1.29^{*}$ & $1.97^{***}$ & $1.39$ & $0.84$ & $0.56$ & $0.08$ \\
+2 lags & $-0.22$ & $0.84$ & $1.91^{**}$ & $2.55^{***}$ & $2.08^{*}$ & $1.39$ & $1.09$ & $-0.03$ \\
+3 lags & $-0.26$ & $0.85$ & $1.93^{**}$ & $2.55^{***}$ & $2.09^{*}$ & $1.42$ & $1.06$ & $0.65$ \\
++ OIS-spænd (lagget) & $-0.47$ & $0.57$ & $1.17$ & $1.73^{**}$ & $1.12$ & $0.69$ & $0.36$ & $0.28$ \\
++ VIX (lagget) & $-0.44$ & $0.61$ & $1.29$ & $1.94^{**}$ & $1.35$ & $0.77$ & $0.57$ & $0.23$ \\
+Niveauer i stedet for $\Delta y$ & $-0.53$ & $0.44$ & $0.97$ & $1.57^{**}$ & $0.82$ & $-0.02$ & $-1.08$ & $-1.89^{*}$ \\
+Fast stikprøve & $-0.89$ & $0.25$ & $1.09$ & $1.88^{*}$ & $1.28$ & $1.05$ & $0.60$ & $0.08$ \\
+Uden episoder & $-0.04$ & $0.94$ & $1.25$ & $1.38$ & $0.04$ & $-1.68$ & $-3.42$ & $0.03$ \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Note:} Som tabel \ref{tab:rob_gpr}, men alle specifikationer er estimeret på stikprøven til og med december 2024. Episodeudeladelsen omfatter dermed kun handelskrigen 2018--2019.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

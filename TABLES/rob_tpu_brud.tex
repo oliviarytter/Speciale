@@ -1,0 +1,25 @@
+\begin{table}[htbp]
+\centering
+\caption{Robusthed: forskellen i dollarens respons på et TPU-stød før og efter april 2025}
+\label{tab:rob_tpu_brud}
+\begin{threeparttable}
+\begin{tabular}{lcccccccc}
+\toprule
+ & \multicolumn{8}{c}{Horisont $h$} \\
+\cmidrule(lr){2-9}
+Specifikation & 0 & 1 & 2 & 3 & 4 & 6 & 9 & 12 \\
+\midrule
+Baseline & $-1.70^{*}$ & $-2.81^{***}$ & $-3.78^{*}$ & $-3.71^{**}$ & $-5.37^{***}$ & $-4.22^{***}$ & $-7.66^{***}$ & $-7.92^{**}$ \\
+Newey-West-standardfejl & $-1.70^{**}$ & $-2.81^{***}$ & $-3.78^{***}$ & $-3.71^{***}$ & $-5.37^{***}$ & $-4.22^{***}$ & $-7.66^{***}$ & $-7.92^{***}$ \\
+2 lags & $-2.05^{*}$ & $-3.25^{***}$ & $-4.91^{**}$ & $-4.68^{***}$ & $-6.31^{***}$ & $-5.32^{**}$ & $-10.03^{***}$ & $-11.71^{**}$ \\
+3 lags & $-1.96^{*}$ & $-3.62^{***}$ & $-5.01^{**}$ & $-4.72^{**}$ & $-6.14^{**}$ & $-5.34^{*}$ & $-10.81^{***}$ & $-11.08$ \\
++ OIS-spænd (lagget) & $-1.75^{*}$ & $-2.88^{***}$ & $-4.07^{*}$ & $-4.39^{**}$ & $-6.28^{***}$ & $-5.03^{***}$ & $-8.88^{***}$ & $-8.40^{***}$ \\
++ VIX (lagget) & $-1.67^{*}$ & $-2.74^{***}$ & $-3.74^{*}$ & $-3.64^{**}$ & $-5.17^{***}$ & $-3.76^{**}$ & $-7.01^{***}$ & $-7.93^{**}$ \\
+Niveauer i stedet for $\Delta y$ & $-1.39$ & $-2.07^{**}$ & $-2.53^{*}$ & $-1.95^{*}$ & $-2.71^{***}$ & $-0.80$ & $-1.03$ & $0.27$ \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Note:} Koefficienten på interaktionsleddet $\phi_h$ i ligning \eqref{eq:lp_dummy}, dvs. forskellen mellem responsen efter og før april 2025. Øvrige forhold som i note til tabel \ref{tab:rob_gpr}.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

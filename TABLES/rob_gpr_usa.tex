@@ -1,0 +1,28 @@
+\begin{table}[htbp]
+\centering
+\caption{Robusthed: dollarens respons på et $\text{GPR}_{\text{USA}}$-stød}
+\label{tab:rob_gpr_usa}
+\begin{threeparttable}
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{6}{c}{Horisont $h$} \\
+\cmidrule(lr){2-7}
+Specifikation & 0 & 3 & 6 & 12 & 18 & 24 \\
+\midrule
+Baseline & $0.03$ & $0.25$ & $-0.10$ & $-1.01$ & $-1.65$ & $-2.13^{**}$ \\
+Newey-West-standardfejl & $0.03$ & $0.25$ & $-0.10$ & $-1.01$ & $-1.65^{**}$ & $-2.13^{***}$ \\
+2 lags & $-0.05$ & $0.35$ & $-0.09$ & $-0.87$ & $-1.23$ & $-1.71$ \\
+3 lags & $-0.03$ & $0.41$ & $0.07$ & $-0.73$ & $-1.26$ & $-1.61$ \\
++ OIS-spænd (lagget) & $0.03$ & $0.25$ & $-0.12$ & $-1.12$ & $-1.69$ & $-2.13^{**}$ \\
++ VIX (lagget) & $0.02$ & $0.25$ & $-0.14$ & $-1.01$ & $-1.57$ & $-1.97^{**}$ \\
+Niveauer i stedet for $\Delta y$ & $0.07$ & $0.43$ & $0.44$ & $0.21$ & $-0.40$ & $-1.07$ \\
+Fast stikprøve & $0.17$ & $0.49$ & $0.32$ & $-0.45$ & $-1.42$ & $-2.13^{**}$ \\
+Uden episoder & $0.22$ & $0.56$ & $-0.43$ & $-1.46$ & $-2.17^{**}$ & $-2.81^{***}$ \\
+Til 2024 & $0.14$ & $0.56$ & $0.36$ & $-0.57$ & $-1.23$ & $-1.98^{*}$ \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Note:} Se note til tabel \ref{tab:rob_gpr}.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

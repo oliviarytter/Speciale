@@ -1,0 +1,28 @@
+\begin{table}[htbp]
+\centering
+\caption{Robusthed: dollarens respons på et GPR-stød}
+\label{tab:rob_gpr}
+\begin{threeparttable}
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{6}{c}{Horisont $h$} \\
+\cmidrule(lr){2-7}
+Specifikation & 0 & 3 & 6 & 12 & 18 & 24 \\
+\midrule
+Baseline & $0.08$ & $0.22$ & $0.01$ & $-0.91$ & $-1.45$ & $-1.97^{*}$ \\
+Newey-West-standardfejl & $0.08$ & $0.22$ & $0.01$ & $-0.91$ & $-1.45^{**}$ & $-1.97^{**}$ \\
+2 lags & $0.03$ & $0.27$ & $0.03$ & $-0.83$ & $-1.08$ & $-1.60$ \\
+3 lags & $0.01$ & $0.27$ & $0.06$ & $-0.90$ & $-1.37$ & $-1.74$ \\
++ OIS-spænd (lagget) & $0.08$ & $0.20$ & $-0.01$ & $-1.02$ & $-1.49$ & $-1.97^{*}$ \\
++ VIX (lagget) & $0.08$ & $0.22$ & $-0.00$ & $-0.91$ & $-1.38$ & $-1.86^{*}$ \\
+Niveauer i stedet for $\Delta y$ & $0.14$ & $0.43$ & $0.63$ & $0.37$ & $-0.20$ & $-0.94$ \\
+Fast stikprøve & $0.24$ & $0.40$ & $0.42$ & $-0.35$ & $-1.23$ & $-1.97^{*}$ \\
+Uden episoder & $0.29$ & $0.50$ & $-0.54$ & $-1.55$ & $-2.27^{**}$ & $-3.06^{***}$ \\
+Til 2024 & $0.19$ & $0.48$ & $0.46$ & $-0.51$ & $-1.05$ & $-1.76$ \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Note:} Responsen i pct. (+ = dollaren styrkes over for euroen) på et stød på én standardafvigelse. Hver række ændrer én ting i forhold til baseline-specifikationen i ligning \eqref{eq:lp_final}. Stjerner angiver signifikans baseret på HC3-standardfejl, bortset fra rækken med Newey-West-standardfejl. $^{*}$, $^{**}$ og $^{***}$ angiver signifikans på 10, 5 og 1 pct.-niveau.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
