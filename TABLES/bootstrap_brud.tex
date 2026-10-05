@@ -1,0 +1,49 @@
+\begin{table}[htbp]
+\centering
+\caption{Bootstrap-baseret inferens for bruddet efter april 2025}
+\label{tab:bootstrap_brud}
+\begin{threeparttable}
+\begin{tabular}{c cccc}
+\toprule
+$h$ & $\hat\phi_h$ & $p$ (HC3) & $p$ (bootstrap) & $n_{\text{post}}$ \\
+\midrule
+\multicolumn{5}{l}{\textit{Panel A: EUR/USD (pct.)}} \\
+0 & $-1.70$ & $0.092$ & $0.086$ & 16 \\
+1 & $-2.81$ & $0.004$ & $0.028$ & 15 \\
+2 & $-3.78$ & $0.069$ & $0.301$ & 14 \\
+3 & $-3.71$ & $0.021$ & $0.264$ & 13 \\
+4 & $-5.37$ & $0.004$ & $0.211$ & 12 \\
+5 & $-4.84$ & $0.081$ & $0.399$ & 11 \\
+6 & $-4.22$ & $0.004$ & $0.157$ & 10 \\
+\multicolumn{5}{l}{Fælles test (sup-t), $h=0,\dots,6$: $p = 0.321$} \\
+\addlinespace
+\multicolumn{5}{l}{\textit{Panel B: USD-hedge ratio (procentpoint)}} \\
+0 & $1.85$ & $0.241$ & $0.221$ & 16 \\
+1 & $2.52$ & $0.131$ & $0.224$ & 15 \\
+2 & $3.05$ & $0.205$ & $0.401$ & 14 \\
+3 & $3.23$ & $0.110$ & $0.383$ & 13 \\
+4 & $4.69$ & $0.023$ & $0.282$ & 12 \\
+5 & $5.84$ & $0.049$ & $0.338$ & 11 \\
+6 & $4.82$ & $0.049$ & $0.307$ & 10 \\
+\multicolumn{5}{l}{Fælles test (sup-t), $h=0,\dots,6$: $p = 0.438$} \\
+\addlinespace
+\multicolumn{5}{l}{\textit{Panel C: Afdækket beløb (pct.)}} \\
+0 & $1.46$ & $0.275$ & $0.267$ & 16 \\
+1 & $2.45$ & $0.232$ & $0.371$ & 15 \\
+2 & $3.35$ & $0.156$ & $0.366$ & 14 \\
+3 & $5.74$ & $0.081$ & $0.319$ & 13 \\
+4 & $8.40$ & $0.043$ & $0.303$ & 12 \\
+5 & $10.72$ & $0.007$ & $0.211$ & 11 \\
+6 & $10.76$ & $0.000$ & $0.034$ & 10 \\
+\multicolumn{5}{l}{Fælles test (sup-t), $h=0,\dots,6$: $p = 0.086$} \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Note:} $\hat\phi_h$ er forskellen i responsen på et TPU-stød efter og før
+april 2025 fra ligning \eqref{eq:lp_dummy}. Bootstrap-p-værdierne er baseret på 999
+wild bootstrap-replikationer fra en VAR(1) uden brud, så den sande forskel er nul.
+Den fælles test (sup-t) tester $\phi_0=\dots=\phi_6=0$, jf. Montiel Olea og
+Plagborg-Møller (2019) og Jordà og Taylor (2025, afsnit 7.2).
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
