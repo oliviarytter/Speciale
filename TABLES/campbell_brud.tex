@@ -1,0 +1,28 @@
+\begin{table}[H]
+\centering
+\caption{Optimal hedge ratio for amerikanske aktiver før og efter april 2025}
+\label{tab:campbell_brud}
+\begin{threeparttable}
+\begin{tabular}{l cccc c}
+\toprule
+ & (1) & (2) & (3) & (4) & \\
+ & Hele perioden & Før 2025 & Efter april 2025 & Forskel & $n_{\text{post}}$ \\
+\midrule
+\multicolumn{6}{l}{\textit{Panel A: Kvartalsafkast (baseline)}} \\
+Aktier & $0.42^{**}$ & $0.24^{***}$ & $1.75^{**}$ & $1.46^{***}$ & 9 \\
+ & $(0.26)$ & $(0.24)$ & $(0.34)$ & $(0.39)$ & \\[2pt]
+Obligationer & $0.71^{***}$ & $0.70^{***}$ & $0.92^{*}$ & $0.23^{**}$ & 9 \\
+ & $(0.08)$ & $(0.10)$ & $(0.05)$ & $(0.10)$ & \\[2pt]
+\addlinespace
+\multicolumn{6}{l}{\textit{Panel B: Månedsafkast}} \\
+Aktier & $0.47^{***}$ & $0.34^{***}$ & $1.07$ & $0.65$ & 9 \\
+ & $(0.18)$ & $(0.19)$ & $(0.40)$ & $(0.45)$ & \\[2pt]
+Obligationer & $0.75^{***}$ & $0.74^{***}$ & $0.77^{***}$ & $0.02$ & 9 \\
+ & $(0.06)$ & $(0.07)$ & $(0.07)$ & $(0.10)$ & \\[2pt]
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Note:} Optimal hedge ratio $h^* = 1 + \beta$, hvor $\beta$ er koefficienten fra en regression af merafkastet på amerikanske aktier og statsobligationer på dollarens merafkast over for euroen (Campbell m.fl., 2010). (1) Hele stikprøven. (2) Stikprøve til og med december 2024. (3) $h^*$ efter april 2025, $1+\beta+\phi$, fra en model med brud-dummy. (4) Forskellen $\phi$. Standardfejl i parentes: Newey-West med 6 lags i panel A (overlappende kvartalsafkast) og HC3 i panel B. Stjerner ved $h^*$ angiver, at $h^*$ er signifikant forskellig fra 1. Det svarer til Campbell m.fl.'s (2010) test af, at den optimale dollareksponering, $1-h^*$, er nul. Stjerner ved forskellen angiver, at $h^*$ har ændret sig. $^{*}$, $^{**}$ og $^{***}$ angiver signifikans på 10, 5 og 1 pct.-niveau. $n_{\text{post}}$ er antallet af månedlige observationer efter bruddet; i panel A overlapper kvartalsafkastene, så antallet af uafhængige kvartaler er ca. en tredjedel.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

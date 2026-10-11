@@ -1,0 +1,26 @@
+\begin{table}[H]
+\centering
+\caption{Robusthed: optimal hedge ratio før og efter april 2025}
+\label{tab:campbell_rob}
+\begin{threeparttable}
+\begin{tabular}{l ccc ccc}
+\toprule
+ & \multicolumn{3}{c}{Aktier} & \multicolumn{3}{c}{Obligationer} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Specifikation & Før 2025 & Efter & Forskel & Før 2025 & Efter & Forskel \\
+\midrule
+Baseline (kvartal, NW 6) & $0.24$ & $1.75$ & $1.46^{***}$ & $0.70$ & $0.92$ & $0.23^{**}$ \\
+Newey-West, 3 lags & $0.24$ & $1.75$ & $1.46^{***}$ & $0.70$ & $0.92$ & $0.23^{**}$ \\
+Månedsafkast (HC3) & $0.34$ & $1.07$ & $0.65$ & $0.74$ & $0.77$ & $0.02$ \\
+Globale indeks & $0.11$ & $1.25$ & $1.09^{***}$ & $0.20$ & $0.46$ & $0.25^{**}$ \\
+Uden handelskrigen 2018--19 & $0.20$ & $1.75$ & $1.49^{***}$ & $0.60$ & $0.92$ & $0.32^{***}$ \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Note:} Optimal hedge ratio $h^* = 1+\beta$ før 2025 (stikprøve til og med december 2024)
+og efter april 2025 samt forskellen $\phi$, jf. tabel \ref{tab:campbell_brud}. Hver række ændrer én ting
+i forhold til baseline. Globale indeks: MSCI World (net return) og Bloomberg Global Treasury, begge i USD.
+Stjerner angiver signifikans af forskellen: $^{*}$, $^{**}$ og $^{***}$ på 10, 5 og 1 pct.-niveau.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

@@ -1,4 +1,4 @@
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
 \caption{Bootstrap-baseret inferens for bruddet efter april 2025}
 \label{tab:bootstrap_brud}
@@ -42,8 +42,9 @@ $h$ & $\hat\phi_h$ & $p$ (HC3) & $p$ (bootstrap) & $n_{\text{post}}$ \\
 \item \textit{Note:} $\hat\phi_h$ er forskellen i responsen på et TPU-stød efter og før
 april 2025 fra ligning \eqref{eq:lp_dummy}. Bootstrap-p-værdierne er baseret på 999
 wild bootstrap-replikationer fra en VAR(1) uden brud, så den sande forskel er nul.
-Den fælles test (sup-t) tester $\phi_0=\dots=\phi_6=0$, jf. Montiel Olea og
-Plagborg-Møller (2019) og Jordà og Taylor (2025, afsnit 7.2).
+Den fælles test (sup-t) tester, at $\phi_h=0$ for alle viste horisonter, jf. Montiel Olea
+og Plagborg-Møller (2019) og Jordà og Taylor (2025, afsnit 7.2). Der vises kun horisonter
+med mindst 10 observationer efter bruddet.
 \end{tablenotes}
 \end{threeparttable}
 \end{table}
