@@ -7,19 +7,22 @@
 \toprule
  & \multicolumn{3}{c}{Aktier} & \multicolumn{3}{c}{Obligationer} \\
 \cmidrule(lr){2-4}\cmidrule(lr){5-7}
-Specifikation & Før 2025 & Efter & Forskel & Før 2025 & Efter & Forskel \\
+Specifikation & Før & Efter & Forskel & Før & Efter & Forskel \\
 \midrule
-Baseline (kvartal, NW 6) & $0.24$ & $1.75$ & $1.46^{***}$ & $0.70$ & $0.92$ & $0.23^{**}$ \\
-Newey-West, 3 lags & $0.24$ & $1.75$ & $1.46^{***}$ & $0.70$ & $0.92$ & $0.23^{**}$ \\
-Månedsafkast (HC3) & $0.34$ & $1.07$ & $0.65$ & $0.74$ & $0.77$ & $0.02$ \\
-Globale indeks & $0.11$ & $1.25$ & $1.09^{***}$ & $0.20$ & $0.46$ & $0.25^{**}$ \\
-Uden handelskrigen 2018--19 & $0.20$ & $1.75$ & $1.49^{***}$ & $0.60$ & $0.92$ & $0.32^{***}$ \\
+Baseline (kvartal, NW 6) & $0.35$ & $1.47$ & $1.12^{***}$ & $0.72$ & $0.86$ & $0.14$ \\
+Newey-West, 3 lags & $0.35$ & $1.47$ & $1.12^{***}$ & $0.72$ & $0.86$ & $0.14$ \\
+Brud fra juni 2025 (hele kvartaler) & $0.50$ & $0.56$ & $0.06$ & $0.74$ & $0.83$ & $0.09$ \\
+Globale indeks (afdækket til USD) & $0.44$ & $1.42$ & $0.98^{***}$ & $0.82$ & $0.88$ & $0.07$ \\
+CRSP-data (til dec. 2025) & $0.29$ & $1.74$ & $1.45^{***}$ & $0.70$ & $0.92$ & $0.22^{**}$ \\
+Uden handelskrigen 2018--19 & $0.33$ & $1.47$ & $1.14^{***}$ & $0.64$ & $0.86$ & $0.22^{*}$ \\
 \bottomrule
 \end{tabular}
 \begin{tablenotes}[flushleft]\footnotesize
-\item \textit{Note:} Optimal hedge ratio $h^* = 1+\beta$ før 2025 (stikprøve til og med december 2024)
-og efter april 2025 samt forskellen $\phi$, jf. tabel \ref{tab:campbell_brud}. Hver række ændrer én ting
-i forhold til baseline. Globale indeks: MSCI World (net return) og Bloomberg Global Treasury, begge i USD.
+\item \textit{Note:} Optimal hedge ratio $h^* = 1+\beta$ før og efter april 2025 samt forskellen $\phi$,
+jf. tabel \ref{tab:campbell_brud}. Hver række ændrer én ting i forhold til baseline. ``Brud fra juni 2025''
+lader kun kvartalsafkast, der ligger helt efter 2. april 2025, indgå i perioden efter bruddet.
+Globale indeks: MSCI World (net return) og Bloomberg Global Aggregate Treasuries, begge afdækket til USD.
+CRSP: værdivægtet aktieindeks og Fama-porteføljen af statsobligationer med 5--10 års løbetid (til december 2025).
 Stjerner angiver signifikans af forskellen: $^{*}$, $^{**}$ og $^{***}$ på 10, 5 og 1 pct.-niveau.
 \end{tablenotes}
 \end{threeparttable}
