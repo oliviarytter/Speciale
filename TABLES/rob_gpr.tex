@@ -9,20 +9,24 @@
 \cmidrule(lr){2-7}
 Specifikation & 0 & 3 & 6 & 12 & 18 & 24 \\
 \midrule
-Baseline & $0.08$ & $0.22$ & $0.01$ & $-0.91$ & $-1.45$ & $-1.97^{*}$ \\
-Newey-West-standardfejl & $0.08$ & $0.22$ & $0.01$ & $-0.91$ & $-1.45^{**}$ & $-1.97^{**}$ \\
-2 lags & $0.03$ & $0.27$ & $0.03$ & $-0.83$ & $-1.08$ & $-1.60$ \\
-3 lags & $0.01$ & $0.27$ & $0.06$ & $-0.90$ & $-1.37$ & $-1.74$ \\
-+ OIS-spænd (lagget) & $0.08$ & $0.20$ & $-0.01$ & $-1.02$ & $-1.49$ & $-1.97^{*}$ \\
-+ VIX (lagget) & $0.08$ & $0.22$ & $-0.00$ & $-0.91$ & $-1.38$ & $-1.86^{*}$ \\
-Niveauer i stedet for $\Delta y$ & $0.14$ & $0.43$ & $0.63$ & $0.37$ & $-0.20$ & $-0.94$ \\
-Fast stikprøve & $0.24$ & $0.40$ & $0.42$ & $-0.35$ & $-1.23$ & $-1.97^{*}$ \\
-Uden episoder & $-0.00$ & $-0.33$ & $-0.90$ & $-1.72$ & $-2.52^{**}$ & $-3.24^{***}$ \\
-Til 2024 & $0.19$ & $0.48$ & $0.46$ & $-0.51$ & $-1.05$ & $-1.76$ \\
+Baseline & $0.04$ & $0.24$ & $0.31$ & $-0.84$ & $-1.31$ & $-1.61$ \\
+Newey-West-standardfejl & $0.04$ & $0.24$ & $0.31$ & $-0.84$ & $-1.31^{**}$ & $-1.61^{***}$ \\
+1 lag & $0.10$ & $0.22$ & $0.26$ & $-0.90$ & $-1.64$ & $-2.08^{*}$ \\
+3 lags & $0.02$ & $0.24$ & $0.31$ & $-0.93$ & $-1.52$ & $-1.75$ \\
++ OIS-spænd (lagget) & $0.05$ & $0.24$ & $0.31$ & $-1.07$ & $-1.45$ & $-1.69$ \\
++ VIX (lagget) & $0.04$ & $0.25$ & $0.30$ & $-0.83$ & $-1.21$ & $-1.44$ \\
++ toldsats (lagget) & $0.04$ & $0.23$ & $0.28$ & $-1.05$ & $-1.36$ & $-1.52$ \\
++ covid-dummy & $0.02$ & $0.13$ & $0.12$ & $-1.04$ & $-1.32$ & $-1.30$ \\
+Niveauer i stedet for $\Delta y$ & $0.07$ & $0.33$ & $0.44$ & $0.13$ & $-0.34$ & $-1.05$ \\
+Fast stikprøve & $0.13$ & $0.52$ & $0.46$ & $-0.55$ & $-1.10$ & $-1.61$ \\
+Uden episoder & $0.03$ & $-0.25$ & $-0.89$ & $-1.42$ & $-2.20^{**}$ & $-2.68^{***}$ \\
+Til 2024 & $0.16$ & $0.52$ & $0.36$ & $-0.56$ & $-0.85$ & $-1.53$ \\
+Bredt dollarindeks & $0.09$ & $0.24$ & $0.32$ & $-0.12$ & $-0.41$ & $-0.32$ \\
+EUR/USD som månedsgennemsnit & $0.32$ & $0.36$ & $0.45$ & $-0.68$ & $-1.27$ & $-1.64$ \\
 \bottomrule
 \end{tabular}
 \begin{tablenotes}[flushleft]\footnotesize
-\item \textit{Note:} Responsen i pct. (+ = dollaren styrkes over for euroen) på et stød på én standardafvigelse. Hver række ændrer én ting i forhold til baseline-specifikationen i ligning \eqref{eq:lp_final}. Stjerner angiver signifikans baseret på HC3-standardfejl, bortset fra rækken med Newey-West-standardfejl. $^{*}$, $^{**}$ og $^{***}$ angiver signifikans på 10, 5 og 1 pct.-niveau.
+\item \textit{Note:} Responsen i pct. (+ = dollaren styrkes over for euroen) på et stød på én standardafvigelse. Hver række ændrer én ting i forhold til baseline-specifikationen i ligning \eqref{eq:lp_final}. Toldsatsen er ændringen i den effektive toldsats (beregnet told i forhold til importværdien) og indgår med lags som de øvrige kontroller. Stjerner angiver signifikans baseret på HC3-standardfejl, bortset fra rækken med Newey-West-standardfejl. $^{*}$, $^{**}$ og $^{***}$ angiver signifikans på 10, 5 og 1 pct.-niveau.
 \end{tablenotes}
 \end{threeparttable}
 \end{table}
