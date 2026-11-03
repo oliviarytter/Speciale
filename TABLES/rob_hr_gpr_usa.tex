@@ -1,0 +1,33 @@
+\begin{table}[H]
+\centering
+\caption{Robusthed: USD-hedge ratioens respons på et $\text{GPR}_{\text{USA}}$-stød}
+\label{tab:rob_hr_gpr_usa}
+\begin{threeparttable}
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{6}{c}{Horisont $h$} \\
+\cmidrule(lr){2-7}
+Specifikation & 0 & 3 & 6 & 12 & 18 & 24 \\
+\midrule
+Baseline & $0.18$ & $-0.42$ & $0.40$ & $0.89$ & $1.39$ & $-0.04$ \\
+Newey-West-standardfejl & $0.18$ & $-0.42$ & $0.40$ & $0.89$ & $1.39^{**}$ & $-0.04$ \\
+1 lag & $0.04$ & $-0.27$ & $0.45$ & $0.98$ & $1.74^{**}$ & $0.34$ \\
+3 lags & $0.15$ & $-0.54$ & $0.26$ & $0.65$ & $1.30$ & $-0.10$ \\
++ OIS-spænd (lagget) & $0.14$ & $-0.46$ & $0.37$ & $0.90$ & $1.35$ & $-0.05$ \\
++ VIX (lagget) & $0.18$ & $-0.44$ & $0.43$ & $0.87$ & $1.40$ & $-0.15$ \\
++ toldsats (lagget) & $0.19$ & $-0.43$ & $0.43$ & $1.09$ & $1.26$ & $-0.26$ \\
+HC1-standardfejl & $0.18$ & $-0.42$ & $0.40$ & $0.89$ & $1.39$ & $-0.04$ \\
+Uden covid-måneder & $0.20$ & $-0.33$ & $0.52$ & $0.73$ & $1.19$ & $-0.38$ \\
+Niveauer i stedet for $\Delta y$ & $0.09$ & $-0.71$ & $-0.02$ & $-0.21$ & $0.44$ & $-0.51$ \\
+Fast stikprøve & $0.11$ & $-0.36$ & $0.73$ & $0.85$ & $1.32$ & $-0.04$ \\
+Uden episoder & $0.33$ & $-0.10$ & $1.01$ & $0.98$ & $1.37$ & $-0.10$ \\
+Til 2024 & $0.09$ & $-0.36$ & $0.80$ & $0.99$ & $1.25$ & $0.06$ \\
+Værdieffekt (samtidigt aktieafkast) & $0.15$ & $-0.44$ & $0.36$ & $0.83$ & $1.33$ & $-0.10$ \\
++ dollarafkast (lagget) & $0.17$ & $-0.39$ & $0.47$ & $0.90$ & $1.31$ & $-0.12$ \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Note:} Se note til tabel \ref{tab:rob_hr_tpu_foer}.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

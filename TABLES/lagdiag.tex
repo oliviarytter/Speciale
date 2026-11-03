@@ -1,0 +1,34 @@
+\begin{table}[H]
+\centering
+\caption{Residualdiagnostik for hjælpe-VAR'en med 2 lags}
+\label{tab:lagdiag}
+\begin{threeparttable}
+\begin{tabular}{lll ccccc cc}
+\toprule
+ & & & \multicolumn{5}{c}{Seriel korrelation i VAR-residualer} & \multicolumn{2}{c}{Lags 3--9 udeladt} \\
+\cmidrule(lr){4-8} \cmidrule(lr){9-10}
+Afh. variabel & Stød & Stikprøve & System & Stød & $\Delta y$ & Beskæft. & Infl. & Stød & $\Delta y$ \\
+\midrule
+EUR/USD & TPU & 2015--2024 & 0.053 & 0.981 & 0.868 & 0.053 & 0.015 & 0.999 & 0.999 \\
+ & TPU & 2015--2026 & 0.052 & 0.973 & 0.923 & 0.009 & 0.018 & 0.995 & 0.992 \\
+ & GPR & 2015--2026 & 0.030 & 0.805 & 0.863 & 0.048 & 0.051 & 0.331 & 0.992 \\
+ & $\text{GPR}_{\text{USA}}$ & 2015--2026 & 0.024 & 0.869 & 0.880 & 0.034 & 0.047 & 0.662 & 0.989 \\
+\addlinespace
+Hedge ratio & TPU & 2015--2024 & 0.103 & 0.983 & 0.989 & 0.029 & 0.017 & 0.997 & 0.993 \\
+ & TPU & 2015--2026 & 0.039 & 0.987 & 0.948 & 0.004 & 0.026 & 0.983 & 0.981 \\
+ & GPR & 2015--2026 & 0.024 & 0.754 & 0.917 & 0.036 & 0.072 & 0.368 & 0.981 \\
+ & $\text{GPR}_{\text{USA}}$ & 2015--2026 & 0.012 & 0.849 & 0.891 & 0.025 & 0.068 & 0.745 & 0.982 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Note:} Alle tal er $p$-værdier. \textit{System} er den multivariate
+Portmanteau-test (12 lags, småstikprøvejusteret) for residualerne i VAR'en fra tabel
+\ref{tab:lagvalg} med covid-dummies og 2 lags. De øvrige kolonner under
+\textit{Seriel korrelation} er Ljung-Box-tests (12 lags) for residualerne i de enkelte
+ligninger. \textit{Lags 3--9 udeladt} er Wald-tests af, at lags 3--9 af beskæftigelsesvæksten
+og inflationen samlet er nul i ligningen for usikkerhedsindekset og i ligningen for
+$\Delta y$ ved $h=0$, givet 2 lags af alle variable. Wald-testene er baseret på
+HC3-standardfejl, og covid-månederne er udeladt.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

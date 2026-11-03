@@ -1,0 +1,33 @@
+\begin{table}[H]
+\centering
+\caption{Valg af lag-længde i hjælpe-VAR'en}
+\label{tab:lagvalg}
+\begin{threeparttable}
+\begin{tabular}{lll c ccc ccc}
+\toprule
+ & & & & \multicolumn{3}{c}{Uden korrektion} & \multicolumn{3}{c}{Med covid-dummies} \\
+\cmidrule(lr){5-7} \cmidrule(lr){8-10}
+Afh. variabel & Stød & Stikprøve & $T$ & AIC & HQ & BIC & AIC & HQ & BIC \\
+\midrule
+EUR/USD & TPU & 2015--2024 & 119 & 2 & 1 & 1 & 2 & 1 & 1 \\
+ & TPU & 2015--2026 & 140 & 1 & 1 & 1 & 2 & 1 & 1 \\
+ & GPR & 2015--2026 & 140 & 1 & 1 & 1 & 2 & 1 & 1 \\
+ & $\text{GPR}_{\text{USA}}$ & 2015--2026 & 140 & 1 & 1 & 1 & 2 & 1 & 1 \\
+\addlinespace
+Hedge ratio & TPU & 2015--2024 & 119 & 1 & 1 & 1 & 2 & 1 & 1 \\
+ & TPU & 2015--2026 & 140 & 1 & 1 & 1 & 2 & 1 & 1 \\
+ & GPR & 2015--2026 & 140 & 1 & 1 & 1 & 2 & 1 & 1 \\
+ & $\text{GPR}_{\text{USA}}$ & 2015--2026 & 140 & 1 & 1 & 1 & 2 & 1 & 1 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Note:} Valgt lag-længde $\hat p$ i en VAR med konstant bestående af
+usikkerhedsindekset, væksten i industriproduktion og beskæftigelse, kerneinflationen,
+ændringen i den 10-årige rente og første differens af den afhængige variabel, dvs. de
+variable, der indgår med lags i ligning \eqref{eq:lp_final}. Maksimal lag-længde er 6, og
+alle lag-længder sammenlignes på samme stikprøve. Med covid-dummies indgår én impuls-dummy
+for hver af månederne marts--juni 2020 som eksogen variabel. $T$ angiver antallet af
+måneder i VAR'en.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

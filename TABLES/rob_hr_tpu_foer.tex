@@ -1,0 +1,32 @@
+\begin{table}[H]
+\centering
+\caption{Robusthed: USD-hedge ratioens respons på et TPU-stød før 2025}
+\label{tab:rob_hr_tpu_foer}
+\begin{threeparttable}
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{6}{c}{Horisont $h$} \\
+\cmidrule(lr){2-7}
+Specifikation & 0 & 3 & 6 & 12 & 18 & 24 \\
+\midrule
+Baseline & $-0.03$ & $-1.48$ & $0.61$ & $0.91$ & $2.14$ & $2.48$ \\
+Newey-West-standardfejl & $-0.03$ & $-1.48$ & $0.61$ & $0.91$ & $2.14$ & $2.48$ \\
+1 lag & $-0.12$ & $-1.27$ & $0.29$ & $0.61$ & $1.73$ & $1.93$ \\
+3 lags & $0.08$ & $-1.40$ & $0.92$ & $1.30$ & $2.54$ & $2.36$ \\
++ OIS-spænd (lagget) & $0.10$ & $-1.20$ & $0.63$ & $0.63$ & $1.74$ & $2.41$ \\
++ VIX (lagget) & $-0.03$ & $-1.47$ & $0.75$ & $0.95$ & $2.20$ & $2.37$ \\
++ toldsats (lagget) & $-0.00$ & $-1.42$ & $0.64$ & $0.65$ & $1.77$ & $2.12$ \\
+HC1-standardfejl & $-0.03$ & $-1.48$ & $0.61$ & $0.91$ & $2.14$ & $2.48$ \\
+Uden covid-måneder & $-0.09$ & $-1.47$ & $0.56$ & $0.43$ & $1.64$ & $2.33$ \\
+Niveauer i stedet for $\Delta y$ & $-0.33$ & $-2.10^{*}$ & $-0.07$ & $-0.41$ & $0.63$ & $0.93$ \\
+Fast stikprøve & $0.50$ & $-1.27$ & $0.74$ & $1.18$ & $2.51$ & $2.48$ \\
+Uden episoder & $-0.62$ & $-2.15$ & $-0.35$ & $-0.58$ & $-3.16^{*}$ & $-3.79^{*}$ \\
+Værdieffekt (samtidigt aktieafkast) & $0.01$ & $-1.48$ & $0.63$ & $0.96$ & $2.18$ & $2.51$ \\
++ dollarafkast (lagget) & $0.03$ & $-0.97$ & $1.24$ & $1.69$ & $2.75$ & $2.68$ \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Note:} Responsen i procentpoint (+ = højere USD-hedge ratio) på et stød på én standardafvigelse. Rækken \textit{Værdieffekt} kontrollerer for det samtidige afkast på S\&P 500 (inkl. udbytter), så responsen ikke afspejler mekaniske ændringer i eksponeringens markedsværdi. Rækken \textit{+ dollarafkast} kontrollerer for lags af ændringen i EUR/USD. Øvrige forhold som i note til tabel \ref{tab:rob_gpr}.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

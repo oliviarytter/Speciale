@@ -11,16 +11,19 @@ Specifikation & Før & Efter & Forskel & Før & Efter & Forskel \\
 \midrule
 Baseline (kvartal, NW 6) & $0.35$ & $1.47$ & $1.12^{***}$ & $0.72$ & $0.86$ & $0.14$ \\
 Newey-West, 3 lags & $0.35$ & $1.47$ & $1.12^{***}$ & $0.72$ & $0.86$ & $0.14$ \\
-Brud fra juni 2025 (hele kvartaler) & $0.50$ & $0.56$ & $0.06$ & $0.74$ & $0.83$ & $0.09$ \\
+Uden overgangskvartaler (apr.--maj 2025) & $0.35$ & $0.56$ & $0.21$ & $0.72$ & $0.83$ & $0.11$ \\
 Globale indeks (afdækket til USD) & $0.44$ & $1.42$ & $0.98^{***}$ & $0.82$ & $0.88$ & $0.07$ \\
 CRSP-data (til dec. 2025) & $0.29$ & $1.74$ & $1.45^{***}$ & $0.70$ & $0.92$ & $0.22^{**}$ \\
 Uden handelskrigen 2018--19 & $0.33$ & $1.47$ & $1.14^{***}$ & $0.64$ & $0.86$ & $0.22^{*}$ \\
+Brud fra marts 2025, uden overgangskvartaler & $0.32$ & $1.04$ & $0.72^{***}$ & $0.73$ & $0.93$ & $0.20$ \\
+Brud fra marts 2025, månedsafkast & $0.37$ & $0.93$ & $0.56$ & $0.76$ & $0.80$ & $0.04$ \\
 \bottomrule
 \end{tabular}
 \begin{tablenotes}[flushleft]\footnotesize
 \item \textit{Note:} Optimal hedge ratio $h^* = 1+\beta$ før og efter april 2025 samt forskellen $\phi$,
-jf. tabel \ref{tab:campbell_brud}. Hver række ændrer én ting i forhold til baseline. ``Brud fra juni 2025''
-lader kun kvartalsafkast, der ligger helt efter 2. april 2025, indgå i perioden efter bruddet.
+jf. tabel \ref{tab:campbell_brud}. Hver række ændrer én ting i forhold til baseline. ``Uden overgangskvartaler''
+udelader de to kvartalsafkast (februar--april og marts--maj 2025), der dækker måneder både før og efter
+2. april 2025.
 Globale indeks: MSCI World (net return) og Bloomberg Global Aggregate Treasuries, begge afdækket til USD.
 CRSP: værdivægtet aktieindeks og Fama-porteføljen af statsobligationer med 5--10 års løbetid (til december 2025).
 Stjerner angiver signifikans af forskellen: $^{*}$, $^{**}$ og $^{***}$ på 10, 5 og 1 pct.-niveau.
